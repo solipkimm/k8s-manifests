@@ -15,8 +15,11 @@ spec:
     - name: DBPORT
       value: "3306"
     - name: DBUSER
-      value: <mysql userID>
+      value: root
     - name: DBPWD
-      value: <mysql password>
+      valueFrom:
+        secretKeyRef:
+          name: app
+          key: password
   imagePullSecrets:
-    - name: ecrcredapp
+  - name: ecrcredapp
