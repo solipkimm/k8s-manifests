@@ -13,4 +13,4 @@ spec:
     - name: MYSQL_ROOT_PASSWORD
       value: <password> # Password update required
   imagePullSecrets:
-    - name: dockercred
+    - name: ecrcreddb
