@@ -11,7 +11,7 @@ spec:
     - containerPort: 8080
     env:
     - name: DBHOST
-      value: <mysql-pod IP>
+      value: mysql.sqldb.svc.cluster.local
     - name: DBPORT
       value: "3306"
     - name: DBUSER
